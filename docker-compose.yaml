@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  cups:
+    build: .
+    restart: unless-stopped
+    environment:
+      - CUPS_USER_ADMIN=admin
+      - CUPS_USER_PASSWORD=admin
+    ports:
+      - 631:631/tcp

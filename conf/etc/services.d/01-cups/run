@@ -1,0 +1,5 @@
+#!/bin/sh
+NAME="CUPS" 
+COMMAND="cupsd -f" 
+WAIT="/tmp/cups"
+exec service-handler "$NAME" "$COMMAND" "$WAIT"

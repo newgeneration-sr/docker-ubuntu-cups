@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv sh
+
+
+if [ $(grep -ci $CUPS_USER_ADMIN /etc/shadow) -eq 0 ]; then
+  ( echo $CUPS_USER_PASSWORD;echo $CUPS_USER_PASSWORD;  ) | adduser --no-create-home $CUPS_USER_ADMIN --ingroup root --ingroup lpadmin
+fi
+
+echo 0 > /tmp/cups
