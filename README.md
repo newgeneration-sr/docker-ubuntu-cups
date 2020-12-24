@@ -1,6 +1,6 @@
 ![docker build automated](https://img.shields.io/docker/cloud/automated/dotriver/cups)
 ![docker build status](https://img.shields.io/docker/cloud/build/dotriver/cups)
-![docker build status](https://img.shields.io/docker/cloud/pulls/dotriver/cups)
+![docker build status](https://img.shields.io/docker/pulls/dotriver/cups)
 
 # CUPS with ton of drivers
 
